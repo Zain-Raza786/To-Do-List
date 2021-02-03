@@ -34,6 +34,7 @@ struct ContentView: View {
             .navigationBarTitle("Things")
             .navigationBarItems(leading: EditButton())
         }
+        
     }
 }
 
