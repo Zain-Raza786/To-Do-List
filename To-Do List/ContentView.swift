@@ -38,7 +38,7 @@ struct ContentView: View {
             .navigationBarTitle("Things")
             .navigationBarItems(leading: EditButton(),
                                 trailing: Button(action: {
-                                                    showingAddView = true }) {
+                                                    showingAddItemView = true }) {
                                     Image(systemName: "plus")
                                 }))
         }
@@ -52,7 +52,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ToDoItem: Identifiable {
+struct ToDoItem: Identifiable, Codable {
     var id = UUID()
     var priority = String()
     var description = String()
